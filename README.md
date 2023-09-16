@@ -1,5 +1,5 @@
 # This is guideline to set up and execute tests
-## Test Suite
+## Test Suite introduction 
    ### 1.API-Search.spec.js is testsuite of API test
    ### 2.UI-Wikipedia-Search.spec.js is testsuite of UI test
 
@@ -21,3 +21,5 @@
 ```npx cypress run```
 #### c. Open Cypress UI and select specs to run
 ```npx cypress open```
+
+## Note: you also able to refer the test result through the shared video from google drive https://drive.google.com/drive/folders/1Whc7SKE7vZAOjHT33nfXvb96ks-7L9TJ?usp=drive_link 
