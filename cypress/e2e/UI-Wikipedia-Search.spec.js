@@ -1,6 +1,6 @@
 import customTasks from "../support/ScreenshotComparator";
 describe('Verify the search function', () => {
-    it('Verify that it will return the correct page by searching topic', () => {
+    it('TC1: Verify that it will return the correct page by searching topic', () => {
       cy.visit('/');
       cy.get('.cdx-text-input__input').type('software testing');
       cy.get('.cdx-button--action-default').click();
@@ -8,7 +8,7 @@ describe('Verify the search function', () => {
       cy.contains('Software testing');      
     });
   
-    it('Verify that the error is shown on search result page if given a long string for the query', () => {
+    it('TC2: Verify that the error is shown on search result page if given a long string for the query', () => {
       cy.visit('/');
       cy.get('.cdx-text-input__input').type('Software testing is the act of examining the artifacts and the ehavior of the software under test by validation and verification. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risksbehavior of the software under test by validation and verification. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software');
       cy.get('.cdx-button--action-default').click();
