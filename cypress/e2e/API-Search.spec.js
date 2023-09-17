@@ -9,7 +9,7 @@ describe("Validate API Search function", () => {
     });
   });
 
-  it("Test 1: Verify search result with correct response titles by requested query", function () {
+  it("TC1: Verify search result with correct response titles by requested query", function () {
     cy.wrap(testData1).each((testCase) => {
       WikipediaApiService.search(testCase).then((response) => {
         expect(response.status).to.equal(200);
@@ -31,7 +31,7 @@ describe("Validate API Search function", () => {
     });
   });
 
-  it("Test 2: Verify response correct paging by sroffset value", function () {
+  it("TC2: Verify response correct paging by sroffset value", function () {
     cy.wrap(testData2).each((testCase) => {
       WikipediaApiService.search(testCase).then((response) => {
         expect(response.status).to.equal(200); 
@@ -51,7 +51,7 @@ describe("Validate API Search function", () => {
     });
   });
 
-  it("Test 3: Verify response value of continue when combining search params", function () {
+  it("TC3: Verify response value of continue when combining search params", function () {
     cy.wrap(testData3).each((testCase) => {
       WikipediaApiService.search(testCase).then((response) => {
         expect(response.status).to.equal(200); 
@@ -74,7 +74,7 @@ describe("Validate API Search function", () => {
     });
   });
 
-  it("Test 4: Verify returnning 'sroffset' =10 when given the negative number for 'sroffset' param", function () {
+  it("TC4: Verify returnning 'sroffset' =10 when given the negative number for 'sroffset' param", function () {
    cy.wrap(testData4).each((testCase) => {
       WikipediaApiService.search(testCase).then((response) => {
         expect(response.status).to.equal(200); 
@@ -90,7 +90,7 @@ describe("Validate API Search function", () => {
     });
   });
 
-  it("Test 5: Verify error response for invalid 'list' parameter", function () {
+  it("TC5: Verify error response for invalid 'list' parameter", function () {
      cy.wrap(testData5).each((testCase) => {
       WikipediaApiService.search(testCase).then((response) => {
         expect(response.status).to.equal(200); 
@@ -108,7 +108,7 @@ describe("Validate API Search function", () => {
     });
   });
 
-  it("Test 6: Verify error response for invalid 'formatversion' parameter", function () {
+  it("TC6: Verify error response for invalid 'formatversion' parameter", function () {
  
     cy.wrap(testData6).each((testCase) => {
       WikipediaApiService.search(testCase).then((response) => {
@@ -127,7 +127,7 @@ describe("Validate API Search function", () => {
     });
   });
 
-  it("Test 7: Verify error response for invalid 'continue' parameter", function () {
+  it("TC7: Verify error response for invalid 'continue' parameter", function () {
  
     cy.wrap(testData7).each((testCase) => {
       WikipediaApiService.search(testCase).then((response) => {
@@ -147,7 +147,7 @@ describe("Validate API Search function", () => {
   });
 
 
-  it("Test 8: Verify error response for long string of 'srsearch' parameter", function () {
+  it("TC8: Verify error response for long string of 'srsearch' parameter", function () {
  
     cy.wrap(testData8).each((testCase) => {
       WikipediaApiService.search(testCase).then((response) => {
@@ -165,7 +165,7 @@ describe("Validate API Search function", () => {
     });
   });
 
-  it("Test 9: Verify error response for invalid value of 'sroffset'  parameter", function () {
+  it("TC9: Verify error response for invalid value of 'sroffset'  parameter", function () {
  
     cy.wrap(testData9).each((testCase) => {
       WikipediaApiService.search(testCase).then((response) => {
@@ -184,7 +184,7 @@ describe("Validate API Search function", () => {
     });
   });
 
-  it("Test 10: Verify error response for invalid value of combining some params", function () {
+  it("TC10: Verify error response for invalid value of combining some params", function () {
  
     cy.wrap(testData10).each((testCase) => {
       WikipediaApiService.search(testCase).then((response) => {
