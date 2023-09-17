@@ -22,4 +22,4 @@
 #### c. Open Cypress UI and select specs to run
 ```npx cypress open```
 
-#### Note: you also able to refer the test result through the shared video from google drive https://drive.google.com/drive/folders/1Whc7SKE7vZAOjHT33nfXvb96ks-7L9TJ?usp=drive_link 
+#### Note: you also able to refer the test result through the shared video from google drive https://drive.google.com/file/d/1SCOm5Jwe3gbJcJhPbG8MRDYlAOrBohkQ/view?usp=drive_link
